@@ -21,6 +21,7 @@ var list = {
 
 //guardas los datos
 for (var i = 0; i < arrayNombres.length; i++) {
+    //Accedemos al vector con el nombre de la variable seguido de un punto con el nombre de datos
     list.datos.push({
     "nombre": arrayNombres[i],
     "apellido": arrayApellido[i],
@@ -29,6 +30,11 @@ for (var i = 0; i < arrayNombres.length; i++) {
 };
 //La función JSON.stringify() de javascript sirve para convertir un objeto o valor de JavaScript en una cadena de texto JSON
 json = JSON.stringify(list); // aqui tienes la lista de objetos en Json
-var obj = JSON.parse(json); //Parsea el Json al objeto anterior.
+var obj = JSON.parse(json); //Parsea el Json al objeto anterior. Toma una cadena JSON y la transforma en un objeto de Javascript
+
+console.log(obj);
+console.log(obj.datos);
+console.log(obj.datos[0].nombre);
+//console.log(json);
 
 $("#res").text('' + json);
