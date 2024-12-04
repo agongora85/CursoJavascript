@@ -38,3 +38,14 @@ console.log(obj.datos[0].nombre);
 //console.log(json);
 
 $("#res").text('' + json);
+$("#tituloprueba").text(obj.datos[2].nombre);
+
+//Recorrer mediante un for básico
+for(i=0;i<obj.datos.length;i++){
+    console.log(obj.datos[i].ciudad);
+}
+
+//Recorrer con un foreach
+obj.datos.forEach(function(d){
+    console.log(d.apellido);
+});
