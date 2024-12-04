@@ -27,7 +27,7 @@ for (var i = 0; i < arrayNombres.length; i++) {
     "ciudad": arrayCiudad[i]
   });
 };
-
+//La función JSON.stringify() de javascript sirve para convertir un objeto o valor de JavaScript en una cadena de texto JSON
 json = JSON.stringify(list); // aqui tienes la lista de objetos en Json
 var obj = JSON.parse(json); //Parsea el Json al objeto anterior.
 
